@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru" data-page="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Somnia — ваши сны и управление Dream Recorder." />
+    <title>Somnia</title>
+    <script>document.documentElement.dataset.page = /^\/settings\/?$/.test(location.pathname) ? 'settings' : 'home';</script>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.svg" />
+    <link rel="preload" href="/assets/fonts/inter-regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/assets/fonts/inter-medium.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/assets/fonts/doto-rounded-bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/vendor/orbloom/orb.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/device-preview.css" />
+    <link rel="stylesheet" href="/dream-sphere.css" />
+    <script type="module" src="/app.js"></script>
+    <script type="module" src="/orb-settings.js"></script>
+    <script type="module" src="/navigation.js"></script>
+    <script type="module" src="/device-preview.js"></script>
+    <script type="module" src="/hover-glow.js"></script>
+    <script type="module" src="/dream-sphere.js"></script>
+    <script type="module">if (new URLSearchParams(location.search).has('perf')) import('/assets/performance-probe.js');</script>
+  </head>
+  <body data-node-id="31:3804">
+    <svg width="0" height="0" aria-hidden="true" class="icon-filter-definitions"><defs><filter id="orbit-icon-ink" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="linear" slope="2" /></feComponentTransfer></filter></defs></svg>
+    <header class="page-header" aria-label="Dream Recorder">
+      <div class="device" data-node-id="29:3404" aria-label="Устройство подключено. Заряд 56%">
+        <div class="device-orb" data-node-id="29:3405">
+          <div class="orb-motion" id="device-orb-motion">
+            <div class="orb-shell">
+              <div class="orb-clip">
+                <div class="orb-content" id="device-orb" role="img" aria-label="Прозрачный стеклянный шар Somnia">
+                  <div class="device-preview" id="device-preview" aria-hidden="true">
+                    <div class="home-preview" data-node-id="46:6153">
+                      <div class="refracted-content"><video class="home-dream" preload="none" muted loop playsinline></video></div>
+                      <div class="home-clock-face">
+                        <img class="home-clock-shadow" src="/assets/home-clock-shadow.svg" width="117" height="117" alt="" data-node-id="46:6154" />
+                        <time class="home-clock" data-node-id="46:6155"></time>
+                      </div>
+                    </div>
+                    <div class="storage-preview" data-scene="storage">
+                      <div class="refracted-content">
+                        <div class="storage-scene-space">
+                          <div class="storage-dream-grid" data-node-id="36:5150"></div>
+                        </div>
+                      </div>
+                      <div class="storage-preview-data" data-node-id="33:4465">
+                        <img class="orb-graphic-shadow" src="/assets/figma-sync/orb-graphic-shadow.svg" width="482" height="482" alt="" data-node-id="44:5718" />
+                        <span class="storage-preview-amount" data-node-id="65:1669"><span class="storage-preview-number" id="preview-storage-remaining" data-node-id="65:1648">85.2</span><span class="storage-preview-unit" data-node-id="65:1668">gb</span></span>
+                        <span class="storage-preview-caption" id="preview-storage-caption" data-node-id="65:1654">осталось</span>
+                      </div>
+                      <div class="retention-preview-data" data-node-id="39:5360">
+                        <img class="orb-graphic-shadow" src="/assets/figma-sync/orb-graphic-shadow.svg" width="482" height="482" alt="" />
+                        <span class="retention-preview-number" id="preview-retention-days" data-node-id="39:5361">14</span>
+                        <span class="storage-preview-caption" data-node-id="39:5362">дней</span>
+                      </div>
+                    </div>
+                    <div class="gesture-preview" data-scene="gesture" data-node-id="34:4486">
+                      <div class="refracted-content">
+                        <div class="gesture-scene-space">
+                          <div class="dream-gallery" data-mode="carousel">
+                            <div class="dream-strip"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="gesture-scene-space">
+                        <div class="gesture-orb-icon" data-node-id="34:4735"><img src="/assets/figma-sync/gesture-orb.svg" alt="" /><img class="orb-graphic-shadow" src="/assets/figma-sync/orb-graphic-shadow.svg" width="482" height="482" alt="" /></div>
+                      </div>
+                      <div class="dream-volume" aria-hidden="true"></div>
+                    </div>
+                    <div class="style-preview" data-style="abstract">
+                      <div class="refracted-content">
+                        <video class="style-dream" data-style="natural" data-src="/assets/dreams/dream-10.mp4" poster="/assets/dreams/dream-10.jpg" preload="none" muted loop playsinline></video>
+                        <video class="style-dream" data-style="abstract" data-src="/assets/dreams/running-abstract.mp4" poster="/assets/dreams/running-abstract.jpg" preload="none" muted loop playsinline></video>
+                      </div>
+                    </div>
+                    <div class="saving-preview" data-saving="ask" data-node-id="52:7115">
+                      <div class="refracted-content">
+                        <div class="saving-all-dreams storage-scene-space">
+                          <div class="saving-dream-grid storage-dream-grid"></div>
+                        </div>
+                        <video class="saving-dream" data-saving="pleasant" data-src="/assets/dreams/dream-08.mp4" poster="/assets/dreams/dream-08.jpg" preload="none" muted loop playsinline></video>
+                        <video class="saving-dream" data-saving="ask" data-src="/assets/dreams/dream-09.mp4" poster="/assets/dreams/dream-09.jpg" preload="none" muted loop playsinline></video>
+                      </div>
+                      <div class="saving-question-space">
+                        <div class="saving-question" data-node-id="52:7168">
+                          <img class="orb-graphic-shadow" src="/assets/figma-sync/orb-graphic-shadow.svg" width="482" height="482" alt="" data-node-id="52:7167" />
+                          <span class="saving-question-icon" data-node-id="77:5098" aria-hidden="true">!</span>
+                          <p data-node-id="77:5099">похоже вам приснился<br />тревожный сон</p>
+                          <p data-node-id="52:7526">сохраним его?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orb-chrome" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+        <a class="device-link" href="/settings" data-route="settings" aria-label="Открыть настройки устройства" title="Настройки устройства"></a>
+      </div>
+      <nav class="header-shapes" data-node-id="29:3776" aria-label="Основная навигация">
+        <a class="home-link" href="/" data-route="home" aria-label="На главную"><img class="home-logo" src="/assets/figma-sync/home-logo.svg" width="52" height="52" alt="" data-node-id="47:6271" /></a>
+      </nav>
+      <div class="settings-page-label" data-node-id="65:2090"><span data-node-id="65:2091">настройки</span></div>
+      <a class="settings-back" href="/" data-route="home" aria-label="Вернуться на главную" title="На главную" data-node-id="47:6274"><img src="/assets/back-home.svg" width="52" height="52" alt="" /></a>
+      <div class="header-square" data-node-id="46:6141" aria-hidden="true"><img class="home-avatar" src="/assets/home-avatar-small.png" decoding="async" alt="" data-node-id="47:6187" /></div>
+      <nav class="settings-orbit" aria-label="Разделы настроек">
+        <button class="orbit-button" data-card="storage" aria-controls="card-storage" aria-current="true" aria-label="Хранилище" title="Хранилище"><img class="orbit-icon" src="/assets/figma-sync/orbit-storage.svg" width="24" height="24" alt="" draggable="false" /></button>
+        <button class="orbit-button" data-card="retention" aria-controls="card-retention" aria-label="Срок хранения" title="Срок хранения"><img class="orbit-icon" src="/assets/figma-sync/orbit-retention.svg" width="24" height="24" alt="" draggable="false" /></button>
+        <button class="orbit-button" data-card="gesture" aria-controls="card-gesture" aria-label="Жест" title="Жест"><img class="orbit-icon" src="/assets/figma-sync/orbit-gesture.svg" width="24" height="24" alt="" draggable="false" /></button>
+        <button class="orbit-button" data-card="style" aria-controls="card-style" aria-label="Стиль записи снов" title="Стиль записи снов"><img class="orbit-icon" src="/assets/figma-sync/orbit-style.svg" width="24" height="24" alt="" draggable="false" /></button>
+        <button class="orbit-button" data-card="saving" aria-controls="card-saving" aria-label="Характер сохранения снов" title="Характер сохранения снов"><img class="orbit-icon" src="/assets/figma-sync/orbit-saving.svg" width="24" height="24" alt="" draggable="false" /></button>
+      </nav>
+      <span class="settings-axis" aria-hidden="true"></span>
+      <div class="home-widgets" data-node-id="46:6145">
+        <div class="home-charge" aria-label="Заряд устройства 56%" data-node-id="46:6146">
+          <span data-node-id="46:6147">56%</span>
+          <div class="home-charge-markers" aria-hidden="true">
+            <img src="/assets/figma-sync/charge-bottom.svg" width="4" height="4" alt="" style="--x:56px;--y:6px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-right.svg" width="4" height="4" alt="" style="--x:107px;--y:53.5px;--rotation:90deg" />
+            <img src="/assets/figma-sync/charge-bottom.svg" width="4" height="4" alt="" style="--x:56px;--y:101px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-bottom.svg" width="4" height="4" alt="" style="--x:14px;--y:95px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-bottom.svg" width="4" height="4" alt="" style="--x:14px;--y:12px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-muted.svg" width="4" height="4" alt="" style="--x:97px;--y:95px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-muted.svg" width="4" height="4" alt="" style="--x:97px;--y:12px;--rotation:0deg" />
+            <img src="/assets/figma-sync/charge-left.svg" width="4" height="4" alt="" style="--x:12px;--y:53.5px;--rotation:90deg" />
+          </div>
+        </div>
+        <div class="home-widget-stack" data-node-id="77:6163">
+          <button class="home-power-status" type="button" data-node-id="77:6165" aria-label="Выключить сферу устройства">
+            <span class="home-power-indicator" aria-hidden="true"></span>
+            <span class="home-power-label">выкл.</span>
+          </button>
+          <div class="home-widget-row" data-node-id="77:6175">
+            <a class="home-widget-circle" href="/settings" data-route="settings" aria-label="Настройки устройства Somnia" data-node-id="77:6176"><img src="/assets/figma-sync/widget-device.png" width="52" height="52" alt="" decoding="async" /></a>
+            <a class="home-device-info" href="/settings" data-route="settings" aria-label="Настройки somnia-01" data-node-id="77:6178">
+              <span class="home-device-name">somnia-01</span>
+              <span class="home-device-connection"><img src="/assets/home-connection-dot.svg" width="4" height="4" alt="" /><span>подключено</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home" id="home-view" data-node-id="46:6125" aria-labelledby="home-title">
+      <h1 class="visually-hidden" id="home-title" tabindex="-1">Ваши сны — Somnia</h1>
+    </main>
+
+    <section class="dream-sphere" aria-label="Хранилище снов" data-no-glow>
+      <canvas class="dream-sphere-canvas" tabindex="0" role="img" aria-label="Сфера снов. Вращайте перетаскиванием или стрелками. Приближайте колёсиком или жестом двумя пальцами."></canvas>
+      <a class="dream-sphere-link" href="/" data-route="home" aria-label="Открыть хранилище снов" title="Хранилище снов"></a>
+    </section>
+
+    <main class="settings" id="settings-view" data-node-id="31:4056" aria-labelledby="settings-title">
+      <h1 class="visually-hidden" id="settings-title" tabindex="-1">Настройки Dream Recorder</h1>
+
+      <section class="card storage-card" id="card-storage" data-preview="storage" data-node-id="31:4057" aria-labelledby="storage-title" tabindex="-1">
+        <h2 id="storage-title" class="card-title" data-node-id="29:3459">хранилище</h2>
+        <div class="storage-amounts">
+          <p class="amount amount-used"><span class="amount-number" data-node-id="29:3458">42.8</span><span class="unit" data-node-id="29:3460">gb</span></p>
+          <p class="amount amount-total"><span class="amount-number" data-node-id="29:3457">128</span><span class="unit" data-node-id="29:3461">gb</span></p>
+        </div>
+        <div class="storage-meter" data-node-id="31:4058" role="meter" aria-label="Использовано хранилища" aria-valuemin="0" aria-valuemax="128" aria-valuenow="42.8" aria-valuetext="42.8 из 128 гигабайт, 33 процента">
+          <div class="storage-meter-fill" data-node-id="33:4476" aria-hidden="true">
+            <div class="storage-flow-field"><i class="storage-flow-layer flow-pink"></i><i class="storage-flow-layer flow-blue"></i><i class="storage-flow-layer flow-yellow"></i></div>
+          </div>
+        </div>
+        <div class="storage-caption">
+          <p data-node-id="29:3462">использовано 33%</p>
+          <p data-node-id="29:3463">осталось 85.2 gb</p>
+        </div>
+        <div class="divider" data-node-id="29:3464"></div>
+        <div class="storage-details" data-node-id="29:3466">
+          <span class="storage-details-text"><span>настройки хранилища</span><span class="muted">127 снов</span></span>
+        </div>
+      </section>
+
+      <section class="card option-card" id="card-retention" data-preview="retention" data-node-id="31:4076" aria-labelledby="retention-title" tabindex="-1">
+        <div class="card-heading" data-node-id="29:3483">
+          <h2 id="retention-title" class="card-title">срок хранения</h2>
+          <button class="help-button" data-help="retention" aria-label="О сроке хранения" aria-expanded="false">?</button>
+        </div>
+        <div class="segmented retention-options" data-choice="retention" role="group" aria-labelledby="retention-title" data-node-id="29:3473">
+          <button class="option" data-value="7" aria-pressed="false" data-node-id="29:3474"><span class="days-number">7</span><span class="days-label">дней</span></button>
+          <button class="option" data-value="14" aria-pressed="true" data-node-id="29:3477"><span class="days-number">14</span><span class="days-label">дней</span></button>
+          <button class="option" data-value="30" aria-pressed="false" data-node-id="29:3480"><span class="days-number">30</span><span class="days-label">дней</span></button>
+        </div>
+      </section>
+
+      <section class="card gesture-card" id="card-gesture" data-preview="gesture" data-node-id="34:4569" aria-labelledby="gesture-title" tabindex="-1">
+        <h2 id="gesture-title" class="card-title" data-node-id="29:3488">жест</h2>
+        <div class="gesture-options" data-choice="gesture" role="group" aria-labelledby="gesture-title" data-node-id="29:3490">
+          <button class="gesture-option" data-value="left" aria-label="Жест влево" aria-pressed="true" data-node-id="29:3491"><img src="/assets/gesture-left.svg" alt="" data-node-id="29:3492" /></button>
+          <button class="gesture-option" data-value="right" aria-label="Жест вправо" aria-pressed="false" data-node-id="29:3495"><img src="/assets/gesture-right.svg" alt="" data-node-id="29:3496" /></button>
+          <button class="gesture-option" data-value="up" aria-label="Жест вверх" aria-pressed="false" data-node-id="29:3493"><img src="/assets/gesture-up.svg" alt="" data-node-id="29:3494" /></button>
+          <button class="gesture-option" data-value="down" aria-label="Жест вниз" aria-pressed="false" data-node-id="29:3497"><img src="/assets/gesture-down.svg" alt="" data-node-id="29:3498" /></button>
+          <button class="gesture-option" data-value="tap" aria-label="Касание" aria-pressed="false" data-node-id="29:3499"><img src="/assets/gesture-tap.svg" alt="" data-node-id="29:3500" /></button>
+        </div>
+        <h3 id="action-title" class="card-title action-title" data-node-id="29:3489">действие</h3>
+        <div class="action-options" data-choice="action" role="group" aria-labelledby="action-title" data-node-id="29:3503">
+          <button class="action-option" data-value="next" aria-pressed="true" data-node-id="29:3505">следующий сон</button>
+          <button class="action-option" data-value="previous" aria-pressed="false" data-node-id="29:3507">предыдущий сон</button>
+          <button class="action-option" data-value="stop" aria-pressed="false" data-node-id="29:3510">остановить</button>
+          <button class="action-option" data-value="play" aria-pressed="false" data-node-id="29:3512">воспроизвести</button>
+          <button class="action-option" data-value="volume-up" aria-pressed="false" data-node-id="29:3515">прибавить громкость</button>
+          <button class="action-option" data-value="volume-down" aria-pressed="false" data-node-id="29:3517">убавить громкость</button>
+        </div>
+      </section>
+
+      <section class="card option-card" id="card-style" data-preview="style" data-node-id="31:4123" aria-labelledby="style-title" tabindex="-1">
+        <div class="card-heading" data-node-id="29:3525">
+          <h2 id="style-title" class="card-title">стиль записи снов</h2>
+          <button class="help-button" data-help="style" aria-label="О стиле записи снов" aria-expanded="false">?</button>
+        </div>
+        <div class="segmented" data-choice="style" role="group" aria-labelledby="style-title" data-node-id="29:3520">
+          <button class="option" data-value="natural" aria-pressed="false" data-node-id="29:3521">натуральный</button>
+          <button class="option" data-value="abstract" aria-pressed="true" data-node-id="29:3523">абстрактный</button>
+        </div>
+      </section>
+
+      <section class="card option-card saving-card" id="card-saving" data-preview="saving" data-node-id="31:4133" aria-labelledby="saving-title" tabindex="-1">
+        <div class="card-heading" data-node-id="29:3537">
+          <h2 id="saving-title" class="card-title">характер сохранения снов</h2>
+          <button class="help-button" data-help="saving" aria-label="О сохранении снов" aria-expanded="false">?</button>
+        </div>
+        <div class="segmented" data-choice="saving" role="group" aria-labelledby="saving-title" data-node-id="29:3530">
+          <button class="option" data-value="all" aria-pressed="false" data-node-id="29:3531">все</button>
+          <button class="option" data-value="pleasant" aria-pressed="false" data-node-id="29:3533">приятные</button>
+          <button class="option" data-value="ask" aria-pressed="true" data-node-id="29:3535">спрашивать</button>
+        </div>
+        <p class="saving-description" id="saving-description" data-node-id="29:3541">в этом режиме устройство при вашем пробуждении спросит вас хотите ли вы сохранить сон</p>
+      </section>
+    </main>
+
+    <div class="help-popover" id="help-popover" role="tooltip" hidden></div>
+    <p class="visually-hidden" id="announcement" role="status" aria-live="polite"></p>
+
+
+  </body>
+</html>

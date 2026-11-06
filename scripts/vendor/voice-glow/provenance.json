@@ -1,0 +1,22 @@
+[
+  {
+    "name": "color.ts",
+    "sha": "78bd4039eb5a9d8d6200b182560d633a14bc8c32",
+    "source": "https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/packages/voice-glow/src/color.ts"
+  },
+  {
+    "name": "presets.ts",
+    "sha": "d4ca2a948c91d888b24b43116e351c1fb62d0ebf",
+    "source": "https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/packages/voice-glow/src/presets.ts"
+  },
+  {
+    "name": "styles.ts",
+    "sha": "e2d075685b4e0925dd7abf30de9779b53f7f279e",
+    "source": "https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/packages/voice-glow/src/styles.ts"
+  },
+  {
+    "name": "voiceDriver.ts",
+    "sha": "86363956841c6e2dcc1f38c0ead42c9b8a60a185",
+    "source": "https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/packages/voice-glow/src/voiceDriver.ts"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "somnia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dream Recorder settings, faithfully implemented from Figma.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check navigation.js && node --check sphere-flight.js && node --check assets/sphere-gallery/presentation.js && node --check device-preview.js && node --check gesture-preview.js && node --check dream-media.js && node --check dream-storage-sphere.js && node --check dream-grid-layout.js && node --check assets/sphere-gallery/atlas-blur.js && node --check assets/sphere-gallery/appearance.js && node --check assets/sphere-gallery/gallery.js && node --check dream-sphere.js && node --check dream-sphere-geometry.js && node --check style-preview.js && node --check saving-preview.js && node --check home-preview.js && node --check orb-refraction.js && node --check settings-geometry.js && node --check orb-config.js && node --check orb-settings.js && node --check smooth-scroll.js && node --check hover-glow.js && node --check assets/voice-glow/engine.js && node --check server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build": "node scripts/build-site.mjs --base /somnia/",
+    "build:root": "node scripts/build-site.mjs --base /"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "orbloom": "0.1.0"
+  }
+}
